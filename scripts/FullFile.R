@@ -19,12 +19,12 @@ setwd("..")
 
 ### Data files 
 
-train_wide <- read.csv("C:/Users/Dell/Desktop/Ubiqum Data Analytics/IoT/Wifi/trainingData.csv",
+train_wide <- read.csv("C:/Users/Dell/Desktop/Ubiqum Data Analytics/IoT/Wi-Fi Localisation/datasets/trainingData.csv",
                        header = TRUE)
-test_wide <- read.csv("C:/Users/Dell/Desktop/Ubiqum Data Analytics/IoT/Wifi/validationData.csv",
+test_wide <- read.csv("C:/Users/Dell/Desktop/Ubiqum Data Analytics/IoT/Wi-Fi Localisation/datasets/validationData.csv",
                       header = TRUE)
-validation_wide <- read.csv("C:/Users/Dell/Desktop/Ubiqum Data Analytics/IoT/Wifi/testData.csv",
-                      header = TRUE)
+validation_wide <- read.csv("C:/Users/Dell/Desktop/Ubiqum Data Analytics/IoT/Wi-Fi Localisation/datasets/testData.csv",
+                            header = TRUE)
 
 #Changing variables to factors & POSIXct
 varis <- c("FLOOR", "BUILDINGID", "SPACEID", 
