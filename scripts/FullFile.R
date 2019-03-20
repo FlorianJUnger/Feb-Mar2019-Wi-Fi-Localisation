@@ -516,9 +516,7 @@ pred1 <- as.data.frame(pred)
 A3_Redu_tr_SigW_dum <- A3_Redu_tr_SigW
 
 # Changing 100 (na) to weakest (-105)
-A3_Redu_tr_SigW_dum[,1:393] <- apply(
-  A3_Redu_tr_SigW_dum[,1:393], 2, function(x) ifelse(x == 100, -105, x)
-  )
+A3_Redu_tr_SigW_dum[A3_Redu_tr_SigW_dum == 100] <- -105
 
 # Normalising
 preprocesswaps <- preProcess(A3_Redu_tr_SigW_dum[,1:393], method = c("range"))
