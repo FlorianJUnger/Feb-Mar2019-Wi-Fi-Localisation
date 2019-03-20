@@ -19,7 +19,7 @@ setwd("..")
 
 ### Data files 
 
-train_wide <- read.csv("./datasets/trainData.csv",
+train_wide <- read.csv("./datasets/trainingData.csv",
                        header = TRUE)
 test_wide <- read.csv("./datasets/testData.csv",
                       header = TRUE)
