@@ -19,11 +19,11 @@ setwd("..")
 
 ### Data files 
 
-train_wide <- read.csv("./DataSets/train.csv",
+train_wide <- read.csv("./DataSets/trainData.csv",
                        header = TRUE)
-test_wide <- read.csv("./DataSets/test.csv",
+test_wide <- read.csv("./DataSets/testData.csv",
                       header = TRUE)
-validation_wide <- read.csv("./DataSets/validation.csv",
+validation_wide <- read.csv("./DataSets/validationData.csv",
                             header = TRUE)
 
 #Changing variables to factors & POSIXct
